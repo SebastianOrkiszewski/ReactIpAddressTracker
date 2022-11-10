@@ -21,3 +21,6 @@ const Root = () => {
 }
 
 export default Root
+
+
+// https://geo.ipify.org/api/v2/country,city?apiKey=at_276wt6TR4TRkQPfLUzHyHrasToTmt&ipAddress=8.8.8.8
