@@ -8,5 +8,11 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background:url(${BackImage}); 
+  background:url(${BackImage});
+  background-repeat :round;
+  input{
+    padding: 10px 10px;
+    border-radius: 10px 0px 0px 10px;
+  }
 `;
+

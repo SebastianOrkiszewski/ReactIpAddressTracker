@@ -15,7 +15,7 @@ const Search = () => {
           placeholder="Search for any IP address or domain"
           
         />
-        <button>
+        <button type="submit">
           <img src={Arrow} alt="Arrow" />
         </button>
       </form>
