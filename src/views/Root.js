@@ -3,6 +3,7 @@ import { GlobalStyle } from "assets/styles/globalStyles";
 import { theme } from "assets/styles/themes";
 import { ThemeProvider } from "styled-components";
 import { Wrapper } from "./Root.styles";
+import Search from 'components/search/Search';
 
 const Root = () => {
   return (
@@ -10,7 +11,7 @@ const Root = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Wrapper>
-        <div>Root</div>
+        <Search />
       </Wrapper>
     </ThemeProvider>
   </>
