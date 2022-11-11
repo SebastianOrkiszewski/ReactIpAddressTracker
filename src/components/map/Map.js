@@ -1,5 +1,6 @@
 import React from 'react'
 import { Wrapper } from './Map.styles'
+import icon from 'components/iconLocation/IconLocation'
 import 'leaflet/dist/leaflet.css'
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 
@@ -12,7 +13,7 @@ const Map = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={position}>
+        <Marker icon={icon} position={position}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
