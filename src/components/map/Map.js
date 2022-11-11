@@ -4,7 +4,7 @@ import icon from 'components/iconLocation/IconLocation'
 import 'leaflet/dist/leaflet.css'
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 
-const Map = () => {
+const Map = ({address}) => {
     const position = [51.505, -0.09]
   return (
     
