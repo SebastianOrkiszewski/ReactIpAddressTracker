@@ -3,7 +3,7 @@ import { Wrapper } from "./Search.styles";
 import Arrow from "assets/images/icon-arrow.svg";
 import TrackerResults from "components/trackerResults/TrackerResults";
 
-const Search = () => {
+const Search = ({address}) => {
   return (
     <Wrapper>
       <h1>Ip Address Tracker</h1>
@@ -18,7 +18,7 @@ const Search = () => {
           <img src={Arrow} alt="Arrow" />
         </button>
       </form>
-      <TrackerResults />
+      <TrackerResults address={address} />
     </Wrapper>
 
   );
