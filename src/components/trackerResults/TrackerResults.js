@@ -1,29 +1,26 @@
 import React from "react";
 import { Wrapper, Information } from "./TrackerResults.styles";
 
-const TrackerResults = ({address}) => {
+const TrackerResults = ({ results }) => {
   return (
-    
-    
-<Wrapper>
+    <Wrapper>
       <Information>
         <h2>IP Adress</h2>
-        <p>{address.ip}</p>
+        <p>{results.ip}</p>
       </Information>
       <Information>
         <h2>Location</h2>
-        <p>{address.location.city}, {address.location.region}</p>
+        <p>{results.location.city}, {results.location.region}</p>
       </Information>
       <Information>
         <h2>TIMEZONE</h2>
-        <p>UTC {address.location.timezone}</p>
+        <p>UTC {results.location.timezone}</p>
       </Information>
       <Information>
         <h2>ISP</h2>
-        <p>{address.isp}</p>
+        <p>{results.isp}</p>
       </Information>
     </Wrapper>
-    
   );
 };
 

@@ -1,24 +1,24 @@
-import React, { useEffect, useMemo } from "react"
-import { Marker, Popup, useMap } from "react-leaflet"
-import icon from 'components/iconLocation/IconLocation'
+import React, { useEffect, useMemo } from "react";
+import { Marker, Popup, useMap } from "react-leaflet";
+import icon from "components/iconLocation/IconLocation";
 
-export default function Markerposition({ address }) {
+export default function Markerposition({ results }) {
   const position = useMemo(() => {
-    return [address.location.lat, address.location.lng]
-  }, [address.location.lat, address.location.lng])
-  const map = useMap()
+    return [results.location.lat, results.location.lng];
+  }, [results.location.lat, results.location.lng]);
+  const map = useMap();
 
   useEffect(() => {
     map.flyTo(position, 13, {
       animate: true,
-    })
-  }, [map, position])
+    });
+  }, [map, position]);
 
   return (
     <>
       <Marker icon={icon} position={position}>
-        <Popup>This is the location of the IP Address or Domain</Popup>
+        <Popup>This this is your location.</Popup>
       </Marker>
     </>
-  )
+  );
 }
