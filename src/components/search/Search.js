@@ -6,7 +6,7 @@ import TrackerResults from "components/trackerResults/TrackerResults";
 const Search = ({ results, ipAddress, handleSubmit, setIpAddress }) => {
   return (
     <Wrapper>
-      <h1>Ip Address Tracker</h1>
+      <h1>IP Address Tracker</h1>
       <form onSubmit={handleSubmit} action="">
         <input
           type="text"

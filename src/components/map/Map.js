@@ -3,13 +3,15 @@ import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer } from "react-leaflet";
 import Markerposition from "components/markerPosition/MarkerPosition";
 
+
 const Map = ({ results }) => {
   return (
-    <MapContainer
+    
+      <MapContainer
       center={[results.location.lat, results.location.lng]}
       zoom={13}
       scrollWheelZoom={true}
-      style={{ height: "100%", width: "100vw" }}
+      style={{ height: "100%", width: "100%" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -17,6 +19,7 @@ const Map = ({ results }) => {
       />
       <Markerposition results={results} />
     </MapContainer>
+    
   );
 };
 
